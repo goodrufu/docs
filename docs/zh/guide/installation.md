@@ -28,8 +28,8 @@ yarn add @wangeditor-next/editor-for-vue2
 安装 Vue3 组件(可选)
 
 ```shell
-yarn add @wangeditor-next/editor-for-vue@next
-# 或者 npm install @wangeditor-next/editor-for-vue@next --save
+yarn add @wangeditor-next/editor-for-vue
+# 或者 npm install @wangeditor-next/editor-for-vue --save
 ```
 
 ## CDN
