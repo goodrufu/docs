@@ -192,8 +192,8 @@ methods: {
 yarn add @wangeditor-next/editor
 # 或者 npm install @wangeditor-next/editor --save
 
-yarn add @wangeditor-next/editor-for-vue@next
-# 或者 npm install @wangeditor-next/editor-for-vue@next --save
+yarn add @wangeditor-next/editor-for-vue
+# 或者 npm install @wangeditor-next/editor-for-vue --save
 ```
 
 ### 使用
