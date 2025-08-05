@@ -279,4 +279,4 @@ editorConfig.customAlert = (s: string, t: string) => {    // TS 语法
 
 ## EXTEND_CONF
 
-用于第三方插件做扩展配置，如 [mention 插件](https://github.com/wangeditor-next/wangEditor-plugin-mention)。
+用于第三方插件做扩展配置，如 [mention 插件](https://github.com/wangeditor-next/wangEditor-next/tree/master/packages/plugin-mention)。
