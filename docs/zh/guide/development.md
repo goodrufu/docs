@@ -414,7 +414,7 @@ Boot.registerModule(module)
 
 ## 定义新元素
 
-编辑器默认只有基本的标题、列表、文字、图片、表格等元素，如果你想让编辑器渲染一个新元素，如 [附件](https://github.com/wangeditor-next/wangEditor-plugin-upload-attachment) [数学公式](https://github.com/wangeditor-next/wangEditor-plugin-formula) [链接卡片](https://github.com/wangeditor-next/wangEditor-plugin-link-card) 等，你就需要根据本节内容来定义。
+编辑器默认只有基本的标题、列表、文字、图片、表格等元素，如果你想让编辑器渲染一个新元素，如 [数学公式](https://github.com/wangeditor-next/wangEditor-next/tree/master/packages/plugin-formula) [链接卡片](https://github.com/wangeditor-next/wangEditor-next/tree/master/packages/plugin-link-card) 等，你就需要根据本节内容来定义。
 
 编辑器的输入和输出通常都是 HTML ，但其内部却有复杂的渲染机制，主要过程是：**model -> 生成 vdom -> 渲染 DOM**，如下图。
 
