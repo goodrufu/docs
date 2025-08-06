@@ -425,8 +425,8 @@ If you unwanted wangEditor's embedded upload function, you can use `customUpload
 
 ```ts
 editorConfig.MENU_CONF['uploadImage'] = {
-    async customUpload(file: File, insertFn: InsertFnType) {   // TS syntax
-    // async customUpload(file, insertFn) {                    // JS syntax
+    async customUpload(file: File, insertFn: InsertFnType, editor: IDomEditor) {   // TS syntax
+    // async customUpload(file, insertFn, editor) {                    // JS syntax
 
         // `file` is your selected file
 
@@ -689,8 +689,8 @@ If you unwanted wangEditor's embedded upload function, you can use `customUpload
 
 ```ts
 editorConfig.MENU_CONF['uploadVideo'] = {
-    async customUpload(file: File, insertFn: InsertFnType) {  // TS syntax
-    // async customUpload(file, insertFn) {                   // JS syntax
+    async customUpload(file: File, insertFn: InsertFnType, editor: IDomEditor) {  // TS syntax
+    // async customUpload(file, insertFn, editor) {                   // JS syntax
 
         // `file` is your selected file
 

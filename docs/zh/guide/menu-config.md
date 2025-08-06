@@ -449,8 +449,8 @@ editorConfig.MENU_CONF['uploadImage'] = {
 ```ts
 editorConfig.MENU_CONF['uploadImage'] = {
     // 自定义上传
-    async customUpload(file: File, insertFn: InsertFnType) {  // TS 语法
-    // async customUpload(file, insertFn) {                   // JS 语法
+    async customUpload(file: File, insertFn: InsertFnType, editor: IDomEditor) {  // TS 语法
+    // async customUpload(file, insertFn, editor) {                   // JS 语法
         // file 即选中的文件
         // 自己实现上传，并得到图片 url alt href
         // 最后插入图片
@@ -726,8 +726,8 @@ editorConfig.MENU_CONF['uploadVideo'] = {
 ```ts
 editorConfig.MENU_CONF['uploadVideo'] = {
     // 自定义上传
-    async customUpload(file: File, insertFn: InsertFnType) {  // TS 语法
-    // async customUpload(file, insertFn) {                   // JS 语法
+    async customUpload(file: File, insertFn: InsertFnType, editor: IDomEditor) {  // TS 语法
+    // async customUpload(file, insertFn, editor) {                   // JS 语法
         // file 即选中的文件
         // 自己实现上传，并得到视频 url poster
         // 最后插入视频
