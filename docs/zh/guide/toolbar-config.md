@@ -65,6 +65,8 @@ toolbarConfig.toolbarKeys = [
 
 ## insertKeys
 
+
+
 可以在当前 `toolbarKeys` 的基础上继续插入新菜单，如自定义扩展的菜单。
 
 ```ts
@@ -73,6 +75,55 @@ toolbarConfig.insertKeys = {
   keys: ['menu-key1', 'menu-key2']
 }
 ```
+
+`insertKeys` 支持多个插入位置。
+
+```ts
+toolbarConfig.insertKeys = [
+  {
+    index: 5,
+    keys: ['menu-key1', 'menu-key2']
+  },
+  {
+    index: 10,
+    keys: ['menu-key3', 'menu-key4']
+  }
+]
+```
+
+`insertKeys` 支持重写指定位置的菜单，如：
+
+```ts
+toolbarConfig.insertKeys = [
+  {
+    index: 5,
+    keys: [],
+    /** 可选项 */
+    replaceFn: (menu) => { /** index = 5 的菜单配置 */
+      return menu; /** 必须返回一个新的配置，并且符合配置要求 */
+    }
+  }
+]
+```
+
+既有插入菜单，又有重写菜单的情况，优先级执行修改，再执行插入如：
+
+```ts
+toolbarConfig.insertKeys = [
+  {
+    index: 5,
+    keys: ['menu-key1'], /** 再执行插入 */ 
+    replaceFn: (menu) => { /** 先执行修改 */
+      return menu; /** 必须返回一个新的配置，并且符合配置要求 */
+    }
+  }
+]
+```
+
+:::tip
+注意：`insertKeys` 是对菜单配置的数组进行修改，因此，修改多个菜单时，需要注意数组的索引。<br>
+:::
+
 
 ## excludeKeys
 
